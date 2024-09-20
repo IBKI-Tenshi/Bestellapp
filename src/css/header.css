@@ -1,0 +1,13 @@
+header {
+    background-color: orange;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 64px;
+    width: 100px;
+    padding-left: 16px;
+}

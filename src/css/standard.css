@@ -1,0 +1,113 @@
+
+h1 {
+    margin: 16px 8px;
+}
+
+.title_container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+.category_button {
+    height: 32px;
+    width: 140px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 16px;
+    margin: 8px 16px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.category_button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+.basket_button {
+    text-decoration: none;
+    height: 24px;
+    width: 24px;
+    margin: 4px;
+    margin-left: 0;
+    margin-right: 8px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+    border-radius: 50%;
+}
+
+.basket_button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.basket_button img {
+    height: 16px;
+    width: 16px;
+}
+
+.delete_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 24px;
+    width: 24px;
+    margin: 4px 8px;
+
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.amount_display {
+    margin: 8px;
+    margin-left: 8;
+    margin-right: 16px;
+    height: 24px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    
+}
+
+.amount_display img {
+    height: 12px;
+    width: 12px;
+}
+
+.price_display {
+    margin: 8px 0;
+    height: 24px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}

@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Raleway";
+}
+
+.content_basket_wraper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.content_container {
+    width: calc(100% - 308px);
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#bestseller_section {
+    padding-left: 8px;
+}
+
+#menu_category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#menu_category_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dish_section {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.basket_container {
+    width: 300px;
+    display: flex;
+}
+
+#confirmed_order_display {
+    height: 40vh;
+
+    padding: 16px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20vh;
+    left: 20vh;
+    right: 20vh;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#basket_button_container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: orange;
+}
+
+#basket_dish_list::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+@media(max-width: 1300px) {
+
+    #restaurant_logo {
+        top: 26% !important;
+    }
+
+    #restaurant_logo img {
+        height: 160px !important;
+        width: 160px !important;
+    }
+}
+
+@media(max-width: 1170px) {
+
+    #restaurant_logo {
+        top: 24% !important;
+    }
+}
+
+@media(max-width: 960px) {
+
+    #restaurant_logo img {
+        height: 140px !important;
+        width: 140px !important;
+    }
+}
+
+@media(max-width: 860px) {
+
+    .content_basket_wraper {
+        flex-direction: column;
+    }
+
+    .content_container {
+        width: 100%;
+    }
+
+    .basket_container {
+        width: 100%;
+    }
+
+    #basket {
+        padding-left: 16px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    #restaurant_logo img {
+        height: 160px !important;
+        width: 160px !important;
+    }
+
+    #amount_display_container {
+        justify-content: unset !important;
+    }
+
+    #price_container {
+        justify-content: unset !important;
+    }
+}
+
+@media(max-width: 650px) {
+
+    #restaurant_logo img {
+        height: 140px !important;
+        width: 140px !important;
+    }
+}
+
+@media(max-width: 600px) {
+
+    #menu_category_buttons {
+        flex-direction: column;
+    }
+
+    #confirmed_order_display {
+        top: 64px;
+        left: 24px;
+        right: 24px;
+    }
+}
+
+@media(max-width: 550px) {
+
+    #restaurant_logo {
+        top: 25% !important;
+    }
+
+    #restaurant_logo img {
+        height: 120px !important;
+        width: 120px !important;
+    }
+}
+
+@media(max-width: 460px) {
+
+    #restaurant_logo {
+        top: 23% !important;
+    }
+}
+
+@media(max-width: 393px) {
+
+    #restaurant_logo {
+        top: 21% !important;
+    }
+}
+
+@media(max-width: 393px) {
+
+    #restaurant_logo {
+        top: 20% !important;
+    }
+
+    #basket {
+        padding-left: 8px;
+    }
+
+
+    #confirm_order {
+        width: 200px !important;
+    }
+}

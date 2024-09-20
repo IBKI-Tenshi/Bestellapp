@@ -1,0 +1,146 @@
+
+.d_none {
+  display: none !important;
+}
+
+#restaurant_img {
+  height: 160px;
+  width: 99%;
+  object-fit: cover;
+  border-radius: 8px;
+  padding-bottom: 16px;
+}
+
+#restaurant_rating_and_description {
+  font-size: larger;
+  padding: 8px;
+  padding-top: 16px;
+  font-weight: bold;
+  width: 75%;
+}
+
+#restaurant_logo {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#restaurant_logo img {
+  height: 200px;
+  width: 200px;
+}
+
+#bestseller_dish_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#actuel_category_name {
+  padding: 8px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#actuel_category_img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  padding: 8px 0;
+}
+
+.Dish {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 8px;
+  padding: 8px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 16px;
+}
+
+.Dish:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dish_description {
+  padding: 4px 0;
+}
+
+.dish_price {
+  margin: 0;
+  padding: 4px 0;
+}
+
+.placeholder {
+  height: 32px;
+  padding: 4px 0;
+}
+
+.to_basket_button {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: orange;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 16px;
+}
+
+.to_basket_button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.checkbox_container {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+  margin-left: 16px;
+  margin-right: 32px;
+}
+
+.checkbox_container input {
+  cursor: pointer;
+  height: 25px;
+  width: 32px;
+}
+
+#toggle_basket_button {
+  height: 64px;
+  width: 160px;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#toggle_basket_button:hover {
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+#menu_img {
+  height: 32px;
+  width: 32px;
+}
+

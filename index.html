@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellApp</title>
+
+    <link href="./style.css" rel="stylesheet" href="text/css">
+    <link href="./src/css/standard.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/header.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/assets.css" rel="stylesheet" type="text/css">
+    <link href="./src/css/basket.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./assets/icons/gasthausLogo_icon.png" type="image/x-icon">
+
+
+    <script src="./src/js/db.js"></script>
+    <script src="./script.js"></script>
+    <script src="./src/js/templates.js"></script>
+</head>
+
+<body onload="renderAll()">
+
+    <section id="header">
+        <header>
+            <img src="./assets/img/Bestell App- Logo.svg" alt="">
+        </header>
+    </section>
+
+    <div class="content_basket_wraper">
+
+        <div id="content_container" class="content_container">
+
+            <div class="restaurant_info">
+                <h1>Kitak`s Gasthaus</h1>
+                <img id="restaurant_img" src="./assets/img/bestseller_img.jpg" alt="#">
+                <div id="restaurant_rating_and_description">
+                    <p>
+                        Willkommen in Kitak's Gasthaus!<br><br>
+                        Wir bieten eine köstliche Auswahl an Pizza, herzhaften Schnitzelgerichten und saftigen Burgern
+                        –<br>
+                        alles frisch zubereitet und mit Liebe serviert.<br>
+                        Egal, ob klassisch oder vegan, bei uns findet
+                        jeder das perfekte Gericht.<br>
+                        Kommen Sie vorbei und genießen Sie die gemütliche Atmosphäre sowie unser vielseitiges Menü, das
+                        für jeden Geschmack etwas zu bieten hat!
+                    </p>
+                    <p>
+                        Unsere Bewertung:<br>
+                        4,8 von 5 Sternen
+                    </p>
+                </div>
+                <div id="restaurant_logo">
+                    <img src="./assets/img/gasthausLogo.png" alt="">
+                </div>
+            </div>
+
+            <section id="bestseller_section">
+                <div class="title_container">
+                    <h2>Bestseller</h2>
+                </div>
+
+                <div id="bestseller_dish_container">
+                    <!-- Hier wird durch js der code eingefügt -->
+                </div>
+            </section>
+
+            <section id="menu_category">
+                <div class="title_container">
+                    <h2>Unsere Angebote</h2>
+                </div>
+                <div id="menu_category_buttons">
+                    <a class="category_button" onclick="renderCategory('Pizza', './assets/img/pizza.jpg', 'Pizza')"
+                        href="#menu_category">
+                        Pizza
+                    </a>
+                    <a class="category_button" onclick="renderCategory('Burger', './assets/img/burger.jpg', 'Burger')"
+                        href="#menu_category">
+                        Burger
+                    </a>
+                    <a class="category_button"
+                        onclick="renderCategory('Fleischgerichte', './assets/img/schnitzel.jpg', 'Meat')"
+                        href="#menu_category">
+                        Fleischgerichte
+                    </a>
+                </div>
+            </section>
+
+            <section id="dish_section">
+                <div id="actuel_category_name">
+                    <!-- Hier wird durch js der code eingefügt -->
+                </div>
+                <img id="actuel_category_img" src="" alt="">
+                <div id="actuel_category">
+                    <!-- Hier wird durch js der code eingefügt -->
+                </div>
+            </section>
+
+        </div>
+
+        <div id="basket_container" class="basket_container">
+
+            <section id="basket">
+                <div class="title_container">
+                    <h2>Warenkorb</h2>
+                </div>
+                <div id="basket_dish_list">
+                    <!-- Hier wird durch js der code eingefügt -->
+                </div>
+                <div id="amount_display_container">
+                    <p>Zwischensumme:</p>
+                    <div id="allDishPrice_display">zahl</div>
+                </div>
+                <div id="how_you_get_it_container">
+                    <div class="this_is_how_you_get_it_container">
+                        <p>Abholen:</p>
+                        <div class="checkbox_container">
+                            <input type="checkbox" id="firstCheckbox"
+                                onclick="toggleCheckboxes('firstCheckbox', 'secondCheckbox')" checked>
+                        </div>
+                        <p>-5%</p>
+                    </div>
+                    <div class="this_is_how_you_get_it_container">
+                        <p>Liefern:</p>
+                        <div class="checkbox_container">
+                            <input type="checkbox" id="secondCheckbox"
+                                onclick="toggleCheckboxes('secondCheckbox', 'firstCheckbox')">
+                        </div>
+                        <p>+5€</p>
+                    </div>
+                </div>
+                <div id="price_container">
+                    <p>Gesamt:</p>
+                    <div id="total_price">zahl</div>
+                </div>
+
+                <a id="confirm_order" onclick="confirmOrder()" href="#">
+                    <div>
+                        Bestellen
+                    </div>
+                </a>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="confirmed_order_display" class="d_none">
+        <div>
+            Die Testbestellung wurde erfolgreich bestätigt
+        </div>
+    </div>
+
+    <div id="basket_button_container" class="d_none">
+        <a onclick="toggleBasket()" id="toggle_basket_button">
+            <img id="menu_img" src="./assets/icons/basket-shopping-solid.svg" alt="">
+        </a>
+    </div>
+
+    <section id="footer">
+        <footer>
+            <img src="./assets/img/Bestell App- Logo.svg" alt="">
+        </footer>
+    </section>
+
+</body>
+
+</html>
